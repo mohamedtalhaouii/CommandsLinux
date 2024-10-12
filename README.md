@@ -1,17 +1,17 @@
 # Commandes Linux avec Options et Notations Spéciales
 
 ## Table des Matières
-1. [Commandes de Fichiers et Répertoires](#commandes-de-fichiers-et-répertoires)
-2. [Commandes Utilisateurs et Permissions](#commandes-utilisateurs-et-permissions)
-3. [Commandes de Processus](#commandes-de-processus)
-4. [Commandes de Manipulation de Texte](#commandes-de-manipulation-de-texte)
+1. [Commandes de Fichiers et Répertoires](#1-commandes-de-fichiers-et-répertoires)
+2. [Commandes Utilisateurs et Permissions](#2-commandes-utilisateurs-et-permissions)
+3. [Commandes de Processus](#3-commandes-de-processus)
+4. [Commandes de Manipulation de Texte](#4-commandes-de-manipulation-de-texte)
 5. [Commandes de Contrôle de Session](#commandes-de-contrôle-de-session)
-6. [Commandes Diverses](#commandes-diverses)
-7. [Notations Spéciales dans les Commandes](#notations-spéciales-dans-les-commandes)
+6. [Commandes Diverses](#5-commandes-diverses)
+7. [Notations Spéciales dans les Commandes](#6-notations-spéciales-dans-les-commandes)
 
 ---
 
-## Commandes de Fichiers et Répertoires
+## 1 - Commandes de Fichiers et Répertoires
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -26,7 +26,7 @@
 
 ---
 
-## Commandes Utilisateurs et Permissions
+## 2 - Commandes Utilisateurs et Permissions
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -38,7 +38,7 @@
 
 ---
 
-## Commandes de Processus
+## 3 - Commandes de Processus
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -50,7 +50,7 @@
 
 ---
 
-## Commandes de Manipulation de Texte
+## 4 - Commandes de Manipulation de Texte
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -61,7 +61,7 @@
 
 ---
 
-## Commandes de Contrôle de Session
+## 5 - Commandes de Contrôle de Session
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -72,7 +72,7 @@
 
 ---
 
-## Commandes Diverses
+## 6 - Commandes Diverses
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -84,17 +84,15 @@
 
 ---
 
-## Notations Spéciales dans les Commandes
+## 7 - Notations Spéciales dans les Commandes
 
 | Symbole     | Description                              | Exemple                               |
 |-------------|------------------------------------------|---------------------------------------|
 | `>`         | Redirige la sortie vers un fichier (écrase le contenu existant) | `echo "texte" > fichier.txt`          |
 | `>>`        | Ajoute la sortie à la fin d’un fichier sans écraser le contenu | `echo "ajout" >> fichier.txt`         |
 | `<`         | Utilise un fichier comme entrée pour une commande  | `command < fichier.txt`               |
-| `|`         | Pipe : envoie la sortie d'une commande vers une autre comme entrée | `ls | grep "mot"`                     |
 | `&`         | Exécute une commande en arrière-plan     | `sleep 10 &`                         |
 | `&&`        | Exécute la commande suivante uniquement si la première réussit | `mkdir test && cd test`               |
-| `||`        | Exécute la commande suivante uniquement si la première échoue | `mkdir test || echo "Erreur"`         |
 | `;`         | Sépare plusieurs commandes sur une seule ligne (exécute successivement) | `command1 ; command2`                |
 | `#`         | Marque un commentaire dans un script ou une commande | `# Ceci est un commentaire`           |
 | `\`         | Permet de couper une commande longue sur plusieurs lignes | `echo "texte long" \`                 |
