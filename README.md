@@ -1,7 +1,7 @@
 # Commandes Linux avec Options et Notations Spéciales
 
 ## Table des Matières
-1. [Commandes de Fichiers et Répertoires](#1)
+1. [Commandes de Fichiers et Répertoires](#commandes-de-fichiers-et-répertoires)
 2. [Commandes Utilisateurs et Permissions](#commandes-utilisateurs-et-permissions)
 3. [Commandes de Processus](#commandes-de-processus)
 4. [Commandes de Manipulation de Texte](#commandes-de-manipulation-de-texte)
@@ -11,7 +11,7 @@
 
 ---
 
-## 1 - Commandes de Fichiers et Répertoires
+## Commandes de Fichiers et Répertoires
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -26,7 +26,7 @@
 
 ---
 
-## 2 - Commandes Utilisateurs et Permissions
+## Commandes Utilisateurs et Permissions
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -38,7 +38,7 @@
 
 ---
 
-## 3 - Commandes de Processus
+## Commandes de Processus
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -50,7 +50,7 @@
 
 ---
 
-## 4 - Commandes de Manipulation de Texte
+## Commandes de Manipulation de Texte
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -61,7 +61,7 @@
 
 ---
 
-## 5 - Commandes de Contrôle de Session
+## Commandes de Contrôle de Session
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -72,7 +72,7 @@
 
 ---
 
-## 6 - Commandes Diverses
+## Commandes Diverses
 
 | **Commande** | **Description**                          | **Options**                                                           |
 |--------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -84,7 +84,7 @@
 
 ---
 
-## 7 - Notations Spéciales dans les Commandes
+## Notations Spéciales dans les Commandes
 
 | Symbole     | Description                              | Exemple                               |
 |-------------|------------------------------------------|---------------------------------------|
