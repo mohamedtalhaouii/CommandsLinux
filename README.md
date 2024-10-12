@@ -1,84 +1,90 @@
-### **1. Commandes de Fichiers et Répertoires**
+# Documentation des Commandes Linux avec Options et Notations Spéciales
 
-| Commande    | Description                              | Options                               |
-|-------------|------------------------------------------|---------------------------------------|
-| `ls`        | Liste les fichiers et répertoires         | `-l` (détails), `-a` (cachés), `-h` (taille lisible), `-R` (récursif), `-t` (tri par date) |
-| `cd`        | Change de répertoire                     | `cd ..` (remonte au répertoire parent), `cd -` (retour au répertoire précédent) |
-| `pwd`       | Affiche le répertoire courant            | -                                     |
-| `mkdir`     | Crée un répertoire                       | `-p` (crée les répertoires parents)   |
-| `rmdir`     | Supprime un répertoire vide              | -                                     |
-| `cp`        | Copie des fichiers et répertoires        | `-r` (récursif), `-v` (verbeux), `-i` (confirme les remplacements) |
-| `mv`        | Déplace ou renomme des fichiers/répertoires | `-i` (demande confirmation avant d’écraser) |
-| `rm`        | Supprime des fichiers ou répertoires     | `-r` (récursif), `-f` (force), `-i` (confirmation) |
-| `find`      | Recherche des fichiers/répertoires       | `-name` (recherche par nom), `-type` (par type) |
-| `touch`     | Crée des fichiers vides ou met à jour l'horodatage | -                                     |
+## Table des Matières
+1. [Commandes de Fichiers et Répertoires](#commandes-de-fichiers-et-répertoires)
+2. [Commandes Utilisateurs et Permissions](#commandes-utilisateurs-et-permissions)
+3. [Commandes de Processus](#commandes-de-processus)
+4. [Commandes de Manipulation de Texte](#commandes-de-manipulation-de-texte)
+5. [Commandes de Contrôle de Session](#commandes-de-contrôle-de-session)
+6. [Commandes Diverses](#commandes-diverses)
+7. [Notations Spéciales dans les Commandes](#notations-spéciales-dans-les-commandes)
 
 ---
 
-### **2. Commandes Utilisateurs et Permissions**
+## 1. Commandes de Fichiers et Répertoires
 
-| Commande    | Description                              | Options                               |
-|-------------|------------------------------------------|---------------------------------------|
-| `chmod`     | Change les permissions d’un fichier      | `-R` (récursif), `u+x` (ajoute exécution pour l'utilisateur) |
-| `chown`     | Change le propriétaire et le groupe      | `-R` (récursif), `user:group` (nouveau propriétaire/groupe) |
-| `usermod`   | Modifie les informations d’un utilisateur | `-aG` (ajoute à un groupe), `-L` (verrouille le compte) |
-| `useradd`   | Crée un nouvel utilisateur               | `-m` (crée un répertoire personnel), `-s` (définit le shell par défaut) |
-| `passwd`    | Change le mot de passe d’un utilisateur  | `-d` (supprime le mot de passe)       |
-| `groupadd`  | Crée un nouveau groupe                   | -                                     |
-
----
-
-### **3. Commandes de Processus**
-
-| Commande    | Description                              | Options                               |
-|-------------|------------------------------------------|---------------------------------------|
-| `ps`        | Affiche les processus actifs             | `-aux` (tous les processus), `-ef` (affichage détaillé) |
-| `top`       | Affiche les processus en temps réel      | `-u` (filtre par utilisateur)         |
-| `kill`      | Termine un processus                     | `-9` (force la terminaison immédiate), `PID` (numéro du processus) |
-| `htop`      | Interface interactive pour surveiller les processus | -                                     |
-| `nice`      | Change la priorité d'un processus        | `-n` (valeur de priorité)             |
-| `killall`   | Termine tous les processus d’un nom donné| `-v` (verbeux), `-I` (insensible à la casse) |
+| **Commande** | **Description**                          | **Options**                                                           |
+|--------------|------------------------------------------|-----------------------------------------------------------------------|
+| `ls`         | Liste les fichiers et répertoires         | `-l` : détails, `-a` : fichiers cachés, `-h` : taille lisible          |
+| `cd`         | Change de répertoire                     | `cd ..` : répertoire parent, `cd -` : répertoire précédent             |
+| `pwd`        | Affiche le répertoire courant            | Sans options                                                          |
+| `mkdir`      | Crée un répertoire                       | `-p` : crée les répertoires parents                                    |
+| `rmdir`      | Supprime un répertoire vide              | Sans options                                                          |
+| `cp`         | Copie des fichiers/répertoires           | `-r` : récursif, `-v` : verbeux, `-i` : confirmation                  |
+| `mv`         | Déplace ou renomme des fichiers/répertoires | `-i` : confirmation avant d’écraser                                  |
+| `rm`         | Supprime des fichiers ou répertoires     | `-r` : récursif, `-f` : force, `-i` : confirmation                    |
 
 ---
 
-### **4. Commandes de Manipulation de Texte**
+## 2. Commandes Utilisateurs et Permissions
 
-| Commande    | Description                              | Options                               |
-|-------------|------------------------------------------|---------------------------------------|
-| `cat`       | Affiche le contenu d’un fichier          | `-n` (affiche les numéros de ligne)   |
-| `grep`      | Recherche un motif dans un fichier       | `-i` (insensible à la casse), `-v` (inverser la recherche), `-r` (récursif) |
-| `sed`       | Modifie le texte à la volée              | `s/motif/remplacement/` (substitution), `-i` (modifie le fichier directement) |
-| `awk`       | Manipule et formate du texte             | `{print $1}` (affiche la première colonne), `-F` (spécifie le séparateur) |
-| `cut`       | Coupe des sections de chaque ligne       | `-d` (spécifie le délimiteur), `-f` (choisit les champs) |
-
----
-
-### **5. Commandes de Contrôle de Session**
-
-| Commande    | Description                              | Options                               |
-|-------------|------------------------------------------|---------------------------------------|
-| `whoami`    | Affiche l’utilisateur actuel             | -                                     |
-| `exit`      | Ferme la session                         | -                                     |
-| `su`        | Change d’utilisateur                     | `su -` (nouvelle session utilisateur) |
-| `logout`    | Déconnecte l’utilisateur actuel          | -                                     |
-| `sudo`      | Exécute une commande en tant que super utilisateur | `-s` (ouvre un shell)                |
+| **Commande** | **Description**                          | **Options**                                                           |
+|--------------|------------------------------------------|-----------------------------------------------------------------------|
+| `chmod`      | Change les permissions d’un fichier      | `-R` : récursif, `u+x` : exécution pour l’utilisateur                 |
+| `chown`      | Change le propriétaire et le groupe      | `-R` : récursif, `user:group` : définit propriétaire et groupe         |
+| `usermod`    | Modifie les infos d’un utilisateur       | `-aG` : ajout à un groupe, `-L` : verrouille le compte                 |
+| `useradd`    | Crée un nouvel utilisateur               | `-m` : répertoire personnel, `-s` : shell par défaut                   |
+| `passwd`     | Modifie le mot de passe d’un utilisateur | `-d` : supprime le mot de passe                                        |
 
 ---
 
-### **6. Commandes Diverses**
+## 3. Commandes de Processus
 
-| Commande    | Description                              | Options                               |
-|-------------|------------------------------------------|---------------------------------------|
-| `df`        | Affiche l'utilisation du disque          | `-h` (affichage humain), `-T` (affiche le type de système de fichiers) |
-| `du`        | Affiche l'utilisation de l'espace disque | `-h` (format humain), `-s` (résumé)   |
-| `uname`     | Affiche des informations système         | `-a` (toutes les infos), `-r` (version du noyau) |
-| `free`      | Affiche l'utilisation de la mémoire      | `-h` (format humain)                 |
-| `uptime`    | Affiche la durée de fonctionnement du système | -                                     |
-| `history`   | Affiche l’historique des commandes       | `!` (exécute une commande de l’historique) |
+| **Commande** | **Description**                          | **Options**                                                           |
+|--------------|------------------------------------------|-----------------------------------------------------------------------|
+| `ps`         | Affiche les processus actifs             | `-aux` : tous les processus, `-ef` : affichage détaillé               |
+| `top`        | Affiche les processus en temps réel      | `-u` : filtre par utilisateur                                         |
+| `kill`       | Termine un processus                     | `-9` : force la terminaison immédiate, `PID` : numéro du processus    |
+| `htop`       | Interface interactive de processus       | Sans options                                                          |
+| `killall`    | Termine tous les processus d’un nom      | `-v` : verbeux, `-I` : insensible à la casse                          |
 
 ---
 
-### **7. Notations Spéciales dans les Commandes**
+## 4. Commandes de Manipulation de Texte
+
+| **Commande** | **Description**                          | **Options**                                                           |
+|--------------|------------------------------------------|-----------------------------------------------------------------------|
+| `cat`        | Affiche le contenu d’un fichier          | `-n` : numéros de ligne                                               |
+| `grep`       | Recherche un motif dans un fichier       | `-i` : insensible à la casse, `-v` : inverse la recherche             |
+| `sed`        | Modifie du texte à la volée              | `s/motif/remplacement/` : substitution, `-i` : modifie le fichier     |
+| `awk`        | Manipule et formate du texte             | `{print $1}` : première colonne, `-F` : spécifie le séparateur        |
+
+---
+
+## 5. Commandes de Contrôle de Session
+
+| **Commande** | **Description**                          | **Options**                                                           |
+|--------------|------------------------------------------|-----------------------------------------------------------------------|
+| `whoami`     | Affiche l’utilisateur actuel             | Sans options                                                          |
+| `exit`       | Ferme la session                         | Sans options                                                          |
+| `su`         | Change d’utilisateur                     | `su -` : nouvelle session utilisateur                                 |
+| `sudo`       | Exécute une commande en super utilisateur | `-s` : ouvre un shell                                                 |
+
+---
+
+## 6. Commandes Diverses
+
+| **Commande** | **Description**                          | **Options**                                                           |
+|--------------|------------------------------------------|-----------------------------------------------------------------------|
+| `df`         | Affiche l’utilisation du disque          | `-h` : format humain, `-T` : type de système de fichiers              |
+| `du`         | Affiche l’utilisation de l’espace disque | `-h` : format humain, `-s` : résumé                                   |
+| `uname`      | Infos système                            | `-a` : toutes les infos, `-r` : version noyau                         |
+| `free`       | Affiche l’utilisation mémoire            | `-h` : format humain                                                  |
+| `uptime`     | Durée de fonctionnement du système       | Sans options                                                          |
+
+---
+
+## 7. Notations Spéciales dans les Commandes
 
 | Symbole     | Description                              | Exemple                               |
 |-------------|------------------------------------------|---------------------------------------|
