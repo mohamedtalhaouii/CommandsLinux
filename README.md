@@ -1,7 +1,7 @@
 # Commandes Linux avec Options et Notations Spéciales
 
 ## Table des Matières
-1. [Commandes de Fichiers et Répertoires](#commandes-de-fichiers-et-répertoires)
+1. [Commandes de Fichiers et Répertoires](#1)
 2. [Commandes Utilisateurs et Permissions](#commandes-utilisateurs-et-permissions)
 3. [Commandes de Processus](#commandes-de-processus)
 4. [Commandes de Manipulation de Texte](#commandes-de-manipulation-de-texte)
