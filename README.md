@@ -1,13 +1,13 @@
 # Commandes Linux avec Options et Notations Spéciales
 
 ## Table des Matières
-1. [Commandes de Fichiers et Répertoires](#1-commandes-de-fichiers-et-répertoires)
-2. [Commandes Utilisateurs et Permissions](#2-commandes-utilisateurs-et-permissions)
-3. [Commandes de Processus](#3-commandes-de-processus)
-4. [Commandes de Manipulation de Texte](#4-commandes-de-manipulation-de-texte)
+1. [Commandes de Fichiers et Répertoires](#commandes-de-fichiers-et-répertoires)
+2. [Commandes Utilisateurs et Permissions](#commandes-utilisateurs-et-permissions)
+3. [Commandes de Processus](#commandes-de-processus)
+4. [Commandes de Manipulation de Texte](#commandes-de-manipulation-de-texte)
 5. [Commandes de Contrôle de Session](#commandes-de-contrôle-de-session)
-6. [Commandes Diverses](#5-commandes-diverses)
-7. [Notations Spéciales dans les Commandes](#6-notations-spéciales-dans-les-commandes)
+6. [Commandes Diverses](#commandes-diverses)
+7. [Notations Spéciales dans les Commandes](#notations-spéciales-dans-les-commandes)
 
 ---
 
